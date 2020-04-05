@@ -1,5 +1,5 @@
 {% set name = "urlchecker" %}
-{% set version = "0.0.13" %}
+{% set version = "0.0.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9a887fcc0c999bc1a4157fcb140984f46c3fad597a027aaab607365b4106f84c
+  sha256: e284bd4f9ef4f3390be804cd52f62f68f50fa9fa0e5e89613ede11236e56ae2a
 
 build:
   number: 0
@@ -48,7 +48,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'tool to collect and validate urls over static files (code and documentation)'
+  summary: tool to collect and validate urls over static files (code and documentation)
   description: |
     urlchecker-python is a python module and command line client to allow for extraction
     and checking of urls in static files, whether they be documentation or code. You can
