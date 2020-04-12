@@ -38,6 +38,7 @@ test:
     - urlchecker.core.whitelist
     - urlchecker.main
     - urlchecker.main.github
+    - urlchecker.main.utils
     - urlchecker.version
   commands:
     - urlchecker --help
