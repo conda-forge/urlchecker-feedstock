@@ -5,9 +5,13 @@ Home: https://github.com/urlstechie/urlchecker-python
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/urlchecker-feedstock/blob/master/LICENSE.txt)
 
 Summary: tool to collect and validate urls over static files (code and documentation)
+
+Development: https://github.com/urlstechie/urlchecker-python
+
+Documentation: https://urlchecker-python.readthedocs.io/en/latest/
 
 urlchecker-python is a python module and command line client to allow for extraction
 and checking of urls in static files, whether they be documentation or code. You can
