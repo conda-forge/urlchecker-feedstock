@@ -35,7 +35,7 @@ test:
     - urlchecker.core.fileproc
     - urlchecker.core.urlmarker
     - urlchecker.core.urlproc
-    - urlchecker.core.whitelist
+    - urlchecker.core.exclude
     - urlchecker.main
     - urlchecker.main.github
     - urlchecker.main.utils
