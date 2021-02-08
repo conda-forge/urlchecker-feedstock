@@ -1,5 +1,5 @@
 {% set name = "urlchecker" %}
-{% set version = "0.0.20" %}
+{% set version = "0.0.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6d8adbc335d6043bcfcb60b5cd8013730185fbc3aecdefffab994ba1ae61536a
+  sha256: 7f49a79533c2e1d759f27e0f0d70828a4ad6ad0d358ed8c5b3ce9a0e70356bd6
 
 build:
   number: 0
@@ -35,7 +35,7 @@ test:
     - urlchecker.core.fileproc
     - urlchecker.core.urlmarker
     - urlchecker.core.urlproc
-    - urlchecker.core.whitelist
+    - urlchecker.core.exclude
     - urlchecker.main
     - urlchecker.main.github
     - urlchecker.main.utils
