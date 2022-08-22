@@ -1,5 +1,5 @@
 {% set name = "urlchecker" %}
-{% set version = "0.0.32" %}
+{% set version = "0.0.33" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a0a5f661bc0f8e62b65161b573520a09db55c8342f0421e8397dddfd32612101
+  sha256: 07ac550e532a7ed93b1742a39c8ac7e33089a4a3abd2dc521db3da4b8964a9d4
 
 build:
   number: 0
