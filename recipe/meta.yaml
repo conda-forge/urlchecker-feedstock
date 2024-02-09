@@ -25,6 +25,7 @@ requirements:
     - python >=3
     - requests
     - fake-useragent
+    - selenium
 
 test:
   imports:
