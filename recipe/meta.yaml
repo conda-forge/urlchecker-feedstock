@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: e303c4d240f3e00e21583bf9636e6792b4d7abd889de5b3114e78662cd2b7f45
 
 build:
-  number: 1
+  number: 2
   noarch: python
   entry_points:
     - urlchecker=urlchecker.client:main
@@ -19,10 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3
+    - python {{ python_min }}
     - pytest-runner
   run:
-    - python >=3
+    - python >={{ python_min }}
     - requests
     - fake-useragent
     - selenium
@@ -47,6 +47,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 
 about:
